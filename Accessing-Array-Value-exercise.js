@@ -1,4 +1,4 @@
-function balikKata(kata){
+function balikString(kata){
     var arr = [];
     for (var i = kata.length -1; i>=0;i--){
       arr = arr + kata[i];
@@ -7,6 +7,6 @@ function balikKata(kata){
   }
   
   var kata = 'Hello World!';
-  console.log(balikKata(kata));
+  console.log(balikString(kata));
   
   
