@@ -6,7 +6,7 @@ function balikString(kata){
     return arr;
   }
   
-  var kata = 'Hello World!';
-  console.log(balikString(kata));
+var kata = 'Hello World!';
+console.log(balikString(kata));
   
   
