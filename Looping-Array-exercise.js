@@ -6,7 +6,7 @@ var input = [
     ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
 ]
 //console.log(input.length)
-function dataHandling (){
+function dataHandling (input){
     for (var i=0;i< input.length;i++){
         for (var j=0;j<1;j++){
             console.log('Nomor ID: '+input[i][j]);
@@ -19,4 +19,4 @@ function dataHandling (){
     }
 }
 
-dataHandling();
+dataHandling(input);
