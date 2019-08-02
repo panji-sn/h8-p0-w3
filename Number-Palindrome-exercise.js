@@ -1,45 +1,18 @@
-function angkaPalindrome(num) {
-    //var strnum = num.toString();
-    //var boolean;
-    /*var i = num+1;
-    while (i>num){
-        
-        i++;
-        if 
-    }
-    for (var i=num+1;i>num;i++){
-        var penampung ;
-        var strnum = num.toString();
-        for (var j=strnum.length -1;j>-1;j--){
-            penampung = penampung + strnum[j];
-            //console.log(penampung);
-            //penampung
-            if(penampung == strnum){
-                //boolean = true;
-                break;
-                
-            } else {
-                //boolean = false;
-                console.log(i); 
-                
-            }
-        }
+function angkaPalindrome(num){
+    for(var i=0; i<num; i++){
+      num++
       
-        
-    }    
-    //return false;*/
-    var rem,temp,final = 0;
-    var number = num;
-    temp = number;
-    while(number>0){
-        rem = number%10;
-        number = parseInt(number/10);
-        final = final*10+rem;
+      var strNum = String(num)
+      var strLen = strNum.length
+      var str = ''
+      for(var j=strLen-1; j>=0; j--){
+        str += strNum[j]
+      }
+      if(str === strNum){
+        return num
+      }
+      
     }
-    if(final==temp){
-        return final;
-        //break;
-    } 
   }
   
   // TEST CASES
