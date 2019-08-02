@@ -1,50 +1,51 @@
 function dataHandling2(input){
-    input.splice(1,4,'Roman Alamsyah Elsharawy','Provinsi Bandar Lampung','21/05/1989','Pria','SMA Internasional Metro');
+    input.splice(1,4,'Roman Alamsyah Elsharawy','Provinsi Bandar Lampung','21/12/1989','Pria','SMA Internasional Metro');
     // var irisan = input.slice(3,4);
-    var strIrisan = input.slice(3,4).toString();
+    var strIrisan = input.slice(3,4).toString().split('/');
     console.log(input);
-    switch (strIrisan[3] && strIrisan[4]){
-        case '0'&&'1':
+    switch (strIrisan[1]){
+        case '01':
             console.log('Januari');
             break;
-        case '0'&&'2':
-            console.log('Februaru');
+        case '02':
+            console.log('Februari');
             break;
-        case '0'&&'3':
+        case '03':
             console.log('Maret');
             break;
-        case '0'&&'4':
+        case '04':
             console.log('April');
             break;     
-        case '0'&&'5':
+        case '05':
             console.log('Mei');
             break;
-        case '0'&&'6':
+        case '06':
             console.log('Juni');
             break;        
-        case '0'&&'7':
+        case '07':
             console.log('Juli');
             break;
-        case '0'&&'8':
+        case '08':
             console.log('Agustus');
             break;        
-        case '0'&&'9':
+        case '09':
             console.log('September');
             break;
-        case '1'&&'0':
+        case '10':
             console.log('Oktober');
             break;        
-        case '1'&&'1':
+        case '11':
             console.log('November');
             break;
-        case '1'&&'2':
+        case '12':
             console.log('Desember');
             break;
     }
     //var bulan = strIrisan.split('/');
     // console.log(strIrisan[3],strIrisan[4])
-    console.log(strIrisan.split('/').sort(function(a, b){return b-a}));
-    console.log(strIrisan.split('/').join('-'));
+    //console.log(strIrisan.split('/'));
+    console.log(strIrisan.sort(function(a, b){return b-a}));
+    console.log(strIrisan.join('-'));
     //var strNama = input.slice(1,2).toString();
     //var nama = strNama.substr(0,15);
     console.log(input.slice(1,2).toString().substr(0,15)); 

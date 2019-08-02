@@ -1,7 +1,7 @@
 function angkaPalindrome(num) {
     //var strnum = num.toString();
     //var boolean;
-    var i = num+1;
+    /*var i = num+1;
     while (i>num){
         
         i++;
@@ -27,9 +27,19 @@ function angkaPalindrome(num) {
       
         
     }    
-    
-    
-    //return false;
+    //return false;*/
+    var rem,temp,final = 0;
+    var number = num;
+    temp = number;
+    while(number>0){
+        rem = number%10;
+        number = parseInt(number/10);
+        final = final*10+rem;
+    }
+    if(final==temp){
+        return final;
+        //break;
+    } 
   }
   
   // TEST CASES
