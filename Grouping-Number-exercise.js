@@ -4,13 +4,14 @@ function mengelompokkanAngka(arr) {
     var perkalianTiga = [];
     for (var i = 0; i<arr.length;i++){
         if (Number(arr[i]) % 3 == 0){
-            perkalianTiga = perkalianTiga + arr[i];
+            perkalianTiga.push(arr[i]);
         } else if (Number(arr[i]) % 2 == 0) {
-            genap = genap + arr[i];
+            genap.push(arr[i]);
         } else {
-            ganjil = ganjil + arr[i];
+            ganjil.push(arr[i]);
         }
-    } 
+    }
+    //perkalianTiga = perkalianTiga.split(",");
     var total = [genap, ganjil, perkalianTiga];
     return total;
   }
